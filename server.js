@@ -1,0 +1,40 @@
+const express = require('express');
+const colors = require('colors');
+const morgan = require('morgan');
+const dotenv = require('dotenv');
+const connectDB = require('./config/db');
+const userRoutes = require('./routes/userRoutes');
+const adminRoutes = require('./routes/adminRoutes');
+const doctorRoutes = require('./routes/doctorRoutes');
+const mediceneRoutes = require('./routes/mediceneRoutes');
+
+
+
+//configuring the dotenv file
+dotenv.config();
+
+//mongodb connect
+connectDB();
+
+//Running Express
+const app = express();
+
+//Fix Parsing error // same as installing body Parser
+app.use(express.json());
+
+app.use(morgan('dev'));
+
+//Routes
+app.use('/Masura',userRoutes)
+app.use('/Masura',adminRoutes)
+app.use('/Masura',doctorRoutes)
+app.use('/Masura',mediceneRoutes)
+
+//port
+const port = process.env.PORT || 8080 ;
+// listening port
+app.listen(port,()=>{
+    console.log(`Server Running at ${process.env.NODE_MODE} mode on Port ${process.env.PORT}`
+    .bgCyan.white
+    )
+});
