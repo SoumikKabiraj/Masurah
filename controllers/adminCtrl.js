@@ -174,16 +174,16 @@ const updatItemController  = async (req, res) => {
 const getCatItem= async(req,res)=>{
   try{
     // console.log(req.body.category)
-    var Inventory;
+    var inventory 
     if(req.body.category!="NA")
+      inventory = await inventoryModel.find({category: req.body.category})
+    else
       inventory = await inventoryModel.find({
       $or: [
         { category: { $exists: false } },
         { category: null }
       ]
     })
-    else
-      inventory = await inventoryModel.find({ category: { $exists: false } })
     res.status(200).send({
       success: true,
       message: "Inventory items",

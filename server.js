@@ -7,7 +7,6 @@ const userRoutes = require('./routes/userRoutes');
 const adminRoutes = require('./routes/adminRoutes');
 const doctorRoutes = require('./routes/doctorRoutes');
 const mediceneRoutes = require('./routes/mediceneRoutes');
-const path = require('path')
 
 
 
@@ -30,14 +29,6 @@ app.use('/Masura',userRoutes)
 app.use('/Masura',adminRoutes)
 app.use('/Masura',doctorRoutes)
 app.use('/Masura',mediceneRoutes)
-
-//static files
-
-app.use(express.static(path.join(__dirname,'./client/build')))
-
-app.get('*',function(req,res){
-    res.sendFile(path.join(__dirname,'./client/index.html'));
-})
 
 //port
 const port = process.env.PORT || 8080 ;
