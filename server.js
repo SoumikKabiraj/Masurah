@@ -7,6 +7,7 @@ const userRoutes = require('./routes/userRoutes');
 const adminRoutes = require('./routes/adminRoutes');
 const doctorRoutes = require('./routes/doctorRoutes');
 const mediceneRoutes = require('./routes/mediceneRoutes');
+const path = require('path')
 
 
 
