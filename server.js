@@ -31,11 +31,12 @@ app.use('/Masura',doctorRoutes)
 app.use('/Masura',mediceneRoutes)
 
 //static files
-app.use(express.Static(path.join(__dirname,'./client/build')))
+app.use(express.static(path.join(__dirname,'./client/build')))
 
 app.get('*',function(req,res){
-    res.sendFile(path.join(__dirname,"./client/build/index.html"));
+    res.sendFile(path.join(__dirname,'./client/index.html'));
 })
+
 
 //port
 const port = process.env.PORT || 8080 ;
