@@ -1,0 +1,26 @@
+.bdy{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+    background-color: #113949;
+}
+.form-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    box-shadow: 8px 8px 10px #1B6B93;
+    margin: 10%;
+
+}
+.register-card{
+    padding: 2vw;
+    border: 1px solid black;
+    
+    background-color: aliceblue;
+    border-radius: 8px;
+    width: 25vw;
+}
+

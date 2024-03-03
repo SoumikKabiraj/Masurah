@@ -1,0 +1,132 @@
+.main {
+    height: 100vh;
+}
+
+.user-profile{
+    min-height: 100vh;
+    width: 300px;
+    display: flex;
+    padding-left: 40px
+    /* position: relative;
+    left: 35%; */
+}
+
+.user-profile a {
+    color: antiquewhite;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+.user-profile i {
+    font-size: 1.2rem;
+    margin: 0 15px;
+}
+
+.layout {
+    display: flex;
+    /* flex-direction: row-reverse; */
+}
+
+.sidebar {
+    min-height: 88vh;
+    width: 20%;
+    border-radius: 2px;
+    background-color: #001C30;
+    box-shadow: 0 0 2px gray;
+    /* margin-right: 5px; */
+    padding: 20px;
+    color:antiquewhite;
+}
+
+.content {
+    width: 100%;
+    height: 100%;
+    padding: 1%;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    height: 12vh;
+    
+    padding: 15px;
+    border-radius: 4px;
+    box-shadow: 0 0 5px gray;
+    background-color: #2D4356;
+    color: antiquewhite;
+}
+
+.body {
+    height: 87vh;
+    margin-bottom: 5px;
+    border-radius: 4px;
+    padding: 15px;
+    box-shadow: 0 0 5px gray;
+    background-color: white;
+}
+
+.logo h5 {
+    font-size: 1.5rem;
+    text-align: center;
+    margin: 20px 0px;
+}
+.logo{
+    /* border-bottom: 2px solid antiquewhite; */
+    width: 100%;
+    height: 100%;
+    /* padding: 1%; */
+}
+
+.menu {
+    margin-top: 20px;
+}
+
+.menu-item {
+    margin-top: 4vh;
+}
+
+.menu-item a {
+    color: antiquewhite;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+.menu-item i {
+    font-size: 1.2rem;
+    margin: 0 15px;
+}
+
+.active {
+    background-color: #64CCC5;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.active a,
+.active i {
+    color: #001C30;
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    /* justify-content: ; */
+    height: 50px;
+    justify-content: flex-end;
+    margin: 0 15px;
+}
+
+.header-content i {
+    margin-right: 20px;
+    font-size: 1.2rem;
+}
+
+.header-content a {
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: antiquewhite;
+    margin: 0 10px;
+    text-transform: uppercase;
+}
