@@ -354,9 +354,6 @@ const addToCartController = async (req,res)=>{
         const addItem = user.items;
         let flag=0;
         for(let i=0;i<addItem.length;i++){
-          console.log(addItem[i].item);
-          console.log(req.body.item);
-          console.log(addItem[i].item==req.body.item);
           if(addItem[i].item===req.body.item)
           {
             flag=1;
